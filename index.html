@@ -39,6 +39,16 @@
             background-color: black;
             border-radius: 5px;
         }
+
+        .container .row .h2 {
+            text-align: center;
+        }
+
+        .col-6 img:hover {
+            transform: scale(0.9);
+            filter: opacity(50%)
+        }
+
     </style>
 
 
@@ -67,7 +77,8 @@
 
         <ul class="nav justify-content-center align-items-center">
             <li class="nav-item col-12 col-md-auto">
-                <a class="nav-link logo" href="#"><img src="https://i.postimg.cc/44MmJrQP/Socks-for-bikes.png" alt=""></a>
+                <a class="nav-link logo" href="#"><img src="https://i.postimg.cc/44MmJrQP/Socks-for-bikes.png"
+                        alt=""></a>
             </li>
             <li class="nav-item col-12 col-md-auto">
                 <a class="nav-link" href="#">What's New</a>
@@ -82,6 +93,80 @@
 
     </div>
 
+    <div class="container">
+        <div class="row justify-content-center gx-2">
+            <div id="carouselExampleIndicators" class="carousel slide col-12 col-md-8" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel/img-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/img-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel/img-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="col-12 col-md-4 d-flex">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="h2">Special Offers</h2>
+                    </div>
+                    <div class="col-6"><a href="#"><img src="images/offers/img-1.jpg" class="img-fluid" alt=""></a>
+                    </div>
+                    <div class="col-6"><a href="#"><img src="images/offers/img-2.jpg" class="img-fluid" alt=""></a>
+                    </div>
+                    <div class="col-6"><a href="#"><img src="images/offers/img-3.jpg" class="img-fluid" alt=""></a>
+                    </div>
+                    <div class="col-6"><a href="#"><img src="images/offers/img-5.jpg" class="img-fluid" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Latest articles</h2>
+            <div class="col-12">
+                <h3>An article title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            </div>
+
+            <div class="col-12">
+                <h3>An article title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            </div>
+            <div class="col-12">
+                <h3>An article title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            </div>
+            <div class="col-12">
+                <h3>An article title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            </div>
+
+        </div>
+
+
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
