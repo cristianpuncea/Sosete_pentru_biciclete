@@ -9,7 +9,7 @@
     margin: 0 auto;
     }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1070px) { 
     .sock {
         width: 50vw;
         height: 50vh;
