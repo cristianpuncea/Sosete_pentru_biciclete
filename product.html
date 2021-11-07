@@ -13,11 +13,13 @@
 
 <div class="container">
 
-    <div class="row mb-5 navigation">
+<!-- NAVBAR -->
+
+    <div class="row navigation justify-content-center align-items-center">
         <div class="col">
         <ul class="nav">
         <li class="nav-item">
-        <a class="nav-link" href="#">Logo</a>
+        <a class="nav-link" href="#"><img src="Sosete_pentru_biciclete/Socks-for-bikes.png"></a>
         </li>
         </ul>
         </div>
@@ -34,18 +36,25 @@
             <a class="nav-link" href="#">Contact Us</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">CART LOGO</a>
+        <a class="nav-link" href="#">🛒</a>
         </li>
         </ul>
         </div>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-12 justify-content-center text-center">    
-        <p>Customize your sock:</p></div>
-    </div>
+<!-- SOCK CUSTOMIZATION -->
+<div class="row mb-5 text-center">
+  <p class="subtitle"> Here at Socks for Bikes we have socks for you and your bike that your heart desires. Feel free to pick from our broad range of existing models, 
+    or customize your own sock and tell all your friends that you are a sock designer!
+  </p>
+</div>
 
-<div class="row sock mb-5" >
+<div class="row mb-3">
+      <div class="col-12 justify-content-center text-center">    
+        <h2>❤️ Start by customizing your sock! ❤️</h2></div>
+    </div>
+<div class="sock_container mb-3">
+<div class="row sock" >
 <svg id="sock2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 699.25 910.02">
   <title>Sock2_inline_CSS</title>
   <path id="sock_layout" d="M407.5,99.5l320,3S687.9,436,680.62,567.63a166.17,166.17,0,0,0,17.79,84c16.37,32.49,29.53,78.64-4.91,108.92-58,51-438,247-528,246-76-.84-210-48-79-165s325-200,343-231,27-110,21-266C448.75,299,407.5,99.5,407.5,99.5Z" transform="translate(-29.93 -97.98)" style="fill: #fff;stroke: #000;stroke-miterlimit: 10;stroke-width: 3px"/>
@@ -85,80 +94,90 @@
   </g>
 </svg>
 </div>
+</div>
 
-<div class="row customize text-center mb-5">
-    <p>Pick your sock's color:</p>
+<div class="row text-center mb-5" id="customize">
+    <p class="sock_color">Pick your sock's color:</p>
     </div>
-    <div class="row ingredients justify-content-center mb-3">
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='red';">Red</a></div>
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='pink';">Pink</a></div>
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='green';">Green</a></div>
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='yellow';">Yellow</a></div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color red-button" onclick="sock_layout.style.fill='red';">Red</a></div>
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color pink-button" onclick="sock_layout.style.fill='pink';">Pink</a></div>
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color green-button" onclick="sock_layout.style.fill='green';">Green</a></div>
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color yellow-button" onclick="sock_layout.style.fill='yellow';">Yellow</a></div>
       </div>
-      <div class="row ingredients justify-content-center mb-5">
-       <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='black';">Black</a></div>
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='purple';">Purple</a></div>
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='orange';">Orange</a></div>
-      <div class="col-2 text-center"><a href="#sock2" class="ingredient neon-button" onclick="sock_layout.style.fill='grey';">Grey</a></div>
+      <div class="row justify-content-center mb-5">
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color black-button" onclick="sock_layout.style.fill='black';">Black</a></div>
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color purple-button" onclick="sock_layout.style.fill='purple';">Purple</a></div>
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color orange-button" onclick="sock_layout.style.fill='orange';">Orange</a></div>
+      <div class="col-2 text-center mb-5"><a href="#sock2" class="color grey-button" onclick="sock_layout.style.fill='grey';">Grey</a></div>
+      
 
-<div class="row customize">
-    <p class="text-center">Pick your sock's design:</p>
+<div class="row sock_design text-center">
+    <p class="sock_color">Pick your sock's design:</p>
+    </div></div>
+    <div class="row design_elements justify-content-center mb-5">
+      <div class="col-2 text-center"><button type="button" id="dots_button" class="design btn">DOTS</a></div>
+      <div class="col-2 text-center"><button type="button" id="stripes_button" class="design btn">STRIPES</a></div>
+      </div>
+
+    <div class="row cart_button mb-5">
+      <button type="button" class="btn btn-secondary btn-lg" type="submit" value="Submit">ADD TO CART</button>
     </div>
-    <div class="row design justify-content-center mb-5">
-      <div class="col-2 text-center"><a href="#sock2" id="dots_button" class="ingredient neon-button">DOTS</a></div>
-      <div class="col-2 text-center"><a href="#sock2" id="stripes_button" class="ingredient neon-button">STRIPES</a></div>
-      </div>
 
 
-    <div class="row reviews">
-      <div class="col-12">
-      <h2 class="text-center text-center">Read some reviewes from our clients!</h2></div>
+    <div class="row reviews text-center mb-5">
+      <div class="col-12 mb-1">
+      <h2>Read some reviewes from our clients!</h2></div>
 
       <div class="col-12">
-        <p>Țane Musculiță</p>
+        <p class="reviewer mb-1">Țane Musculiță</p> <hr class="mb-2">
         <div class="review-box">
         <p>Am cumparat aceasta soseta pentru bicicleta mea, Ioana, care suferea de frisoane in timpul iernii. Pretul a fost destul de piperat, dar calitatea e mult peste nivelul pietei.</p></div>
       </div>
 
       <div class="col-12">
-        <p>Măgărel Iosifalău</p>
+        <p class="reviewer mb-1">Măgărel Iosifalău</p> <hr class="mb-2">
         <div class="review-box">
         <p>Am primit această șoșetă chiar de ziua mea, pe 15 aprilie! Am fost așa de fericit, că de mult voiam și eu una din asta că toti prietenii aveau pentru bicicletele lor</p></div>
       </div>
 
       <div class="col-12">
-        <p>Ștefania Lăcustă </p>
+        <p class="reviewer mb-1">Ștefania Lăcustă </p> <hr class="mb-2">
         <div class="review-box">
         <p>Very good socks. I can hear Nietzsche taking to me through them.</p></div>
       </div>
 
       <div class="col-12">
-        <p>Ilinca Corason</p>
+        <p class="reviewer mb-1">Ilinca Corason</p> <hr class="mb-2">
         <div class="review-box">
         <p>Aceste shoshete m-au ajutat sa imi gasesc alesul inimii. Piciorushele noastre s-au atins invelite in shoshetutze pe sub masa de la biblioteca. El studia un dictionar de neologisme, iar eu rasfoiam tratatul lui Georges Minois, Istoria Infernurilor, pentru a ma lamuri in legatura cu consecintele unui pacat savarshit in decursul diminetzii. De la prima atingere am simtit k baiatul din fata mea poarta Sosete pentru Biciclete! Nu mai gasesti niciunde materiale asa fine k la Sosete pentru Biciclete! Shi deshi nu sunt bicicleta, shi nici baiatul din fatza nu era bicicleta, noua ne-au incaput pe picior si apoi am zis amandoi buna-ziua si am mers la toaleta. Suntem casatoriti de 2 ani. Sotzul meu ink nu a terminat de citit dictionarul de neologisme, dar uneori il mai ajut si eu seara inainte de culcare. </p></div>
       </div>
 
       <div class="col-12">
-        <p>Costi Costinel</p>
+        <p class="reviewer mb-1">Costi Costinel</p> <hr class="mb-2">
         <div class="review-box">
         <p>These socks changed my life!</p></div>
       </div>
 
-  
+        <div class="col-12 mb-3">
+        <p>If you want your review to be featured, describe your experience using Socks for Bikes below!</p>
+      </div>  
 
-      <div class="col-12">
-        <p>Add your own review...</p>
-        <input type="textarea">
+      <div class="form-floating mb-2" style="width: 80%; margin: 0 auto;">
+        <textarea class="form-control" placeholder="Leave a review" id="floatingTextarea2" style="height: 100px;"></textarea>
+        <label for="floatingTextarea2">Add your own review...</label>
       </div>
-    </div>
-    
-    <div class="row cart mb-5">
-    <button>ADD TO CART</button>
-    </div>
+      <div class="form-floating mb-1" style="width: 80%; margin: 0 auto;">
+        <input type="name" class="form-control" id="floatingInput" placeholder="Your nickname">
+        <label for="floatingInput">Name</label>
+      </div>
+      <div>
+      <button type="button" class="btn btn-secondary btn-lg" type="submit" value="Submit">send</button> </div>
 
- 
-</div> 
 
+    </div> 
+
+    </div>
 
 
 <script src="script.js"></script>
