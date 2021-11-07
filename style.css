@@ -1,0 +1,49 @@
+.row-menu {
+    background-color: #F8BBD0;
+}
+
+.row-contact 
+{
+    background-color: #E91E63;
+    color: #212121;
+}
+
+.row-socks 
+{
+    background-color: #E91E63;
+    color: #212121;
+}
+.row-information {
+    background-color: #BDBDBD;
+}
+
+.row-type 
+{
+    background-color: #E91E63;
+}
+.col-logo {
+    background-color: #F8BBD0;
+}
+.col-copyright {
+    background-color: #F8BBD0;
+    font-weight: 600;
+}
+.col-rights
+{
+background-color: #F8BBD0;
+font-weight: 500;
+}
+
+.bi-cart {
+    font-size: 1.5rem;
+}
+.bi-cart:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #757575;
+}
+
+
+
