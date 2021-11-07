@@ -12,32 +12,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
     <style>
-        .container-fluid {
+        body {
+            background: #BDBDBD;
+        }
+
+        header .container-fluid {
             background: #C2185B;
             padding-top: 2px;
         }
 
-        .container-fluid ul:first-child li {
+        header .container-fluid ul:first-child li {
             padding-right: 5px;
         }
 
-        .container-fluid ul:first-child li a {
+        header .container-fluid ul:first-child li a {
             color: white;
         }
 
-        .container-fluid ul:last-child li a {
+        header .container-fluid ul:last-child li a {
             color: white;
             text-transform: uppercase;
             text-align: center;
         }
 
-        .container-fluid ul:last-child li a.logo {
+        header .container-fluid ul:last-child li a.logo {
             text-align: left;
         }
 
-        .container-fluid ul:last-child li:not(:first-child):hover {
+        header .container-fluid ul:last-child li:not(:first-child):hover {
             background-color: black;
             border-radius: 5px;
+        }
+
+        .container {
+            background: #FFF;
         }
 
         .container .row .h2 {
@@ -49,6 +57,90 @@
             filter: opacity(50%)
         }
 
+        .new_price {
+            font-weight: 800;
+        }
+
+        .old_price {
+            text-decoration: line-through;
+            color: gray;
+            font-weight: 400;
+        }
+
+        .container .row .col-12 .row .col-6 {
+            border: 1px solid gray;
+        }
+
+        .article {
+            border-bottom: 1px solid gray;
+            margin: 5px 0;
+        }
+
+        .article img {
+            max-width: 480px;
+            height: auto;
+            float: left;
+            padding: 20px;
+        }
+
+        .article-link {
+            text-decoration: none;
+            color: #E040FB;
+        }
+
+        .article-link:hover {
+            color: #F8BBD0;
+        }
+
+        footer .container-fluid {
+            background: #F8BBD0;
+        }
+
+        footer .social-btn li {
+            list-style-type: none;
+            display: inline-block;
+            font-size: x-large;
+            padding: 0 20px;
+        }
+
+        footer .social-btn li a {
+            color: black;
+        }
+
+        footer .social-btn li a:hover {
+            color: grey;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        footer .mid-column .join-mailing {
+            display: inline-block;
+            background: #C2185B;
+            padding: 10px;
+            color: black;
+        }
+
+        footer .mid-column .join-mailing:hover {
+            filter: grayscale(50%);
+        }
+
+        footer .mid-column,
+        .right-column ul {
+            font-weight: 600;
+            list-style-type: none;
+        }
+
+        footer .right-column ul a {
+            color:black;
+            text-decoration: none;
+            text-align: left;            
+        } 
+
+        footer .right-column ul a:hover {
+            color: gray;
+        }
     </style>
 
 
@@ -56,45 +148,46 @@
 </head>
 
 <body>
+    <header class="sticky-top">
+        <div class="container-fluid">
+            <ul class="nav justify-content-end align-items-center">
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-dark" type="submit"><i class="bi bi-person"></i></a></button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-dark" type="submit"><i
+                            class="bi bi-cart4"></i><span>0</span></a></button>
+                </li>
 
-    <div class="container-fluid">
-        <ul class="nav justify-content-end align-items-center">
-            <li class="nav-item">
-                <form class="d-flex">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit"><i class="bi bi-search"></i></button>
-                </form>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-outline-dark" type="submit"><i class="bi bi-person"></i></a></button>
-            </li>
-            <li class="nav-item">
-                <button class="btn btn-outline-dark" type="submit"><i
-                        class="bi bi-cart4"></i><span>0</span></a></button>
-            </li>
+            </ul>
 
-        </ul>
+            <ul class="nav justify-content-center align-items-center">
+                <li class="nav-item col-12 col-md-auto">
+                    <a class="nav-link logo" href="#"><img src="https://i.postimg.cc/44MmJrQP/Socks-for-bikes.png"
+                            alt=""></a>
+                </li>
+                <li class="nav-item col-12 col-md-auto">
+                    <a class="nav-link" href="#">What's New</a>
+                </li>
+                <li class="nav-item col-12 col-md-auto">
+                    <a class="nav-link" href="#">All Products</a>
+                </li>
+                <li class="nav-item col-12 col-md-auto">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
 
-        <ul class="nav justify-content-center align-items-center">
-            <li class="nav-item col-12 col-md-auto">
-                <a class="nav-link logo" href="#"><img src="https://i.postimg.cc/44MmJrQP/Socks-for-bikes.png"
-                        alt=""></a>
-            </li>
-            <li class="nav-item col-12 col-md-auto">
-                <a class="nav-link" href="#">What's New</a>
-            </li>
-            <li class="nav-item col-12 col-md-auto">
-                <a class="nav-link" href="#">All Products</a>
-            </li>
-            <li class="nav-item col-12 col-md-auto">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-
-    </div>
+        </div>
+    </header>
 
     <div class="container">
-        <div class="row justify-content-center gx-2">
+        <div class="row justify-content-between mb-5">
             <div id="carouselExampleIndicators" class="carousel slide col-12 col-md-8" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -131,42 +224,199 @@
                     <div class="col-12">
                         <h2 class="h2">Special Offers</h2>
                     </div>
-                    <div class="col-6"><a href="#"><img src="images/offers/img-1.jpg" class="img-fluid" alt=""></a>
+                    <div class="col-6">
+                        <a href="#"><img src="images/offers/img-1.jpg" class="img-fluid" alt=""></a>
+                        <span class="old_price">49.90$</span><span class="new_price"> 29.90$</span>
+                        <a href="#" class="btn btn-primary">Buy</a>
                     </div>
-                    <div class="col-6"><a href="#"><img src="images/offers/img-2.jpg" class="img-fluid" alt=""></a>
+                    <div class="col-6">
+                        <a href="#"><img src="images/offers/img-2.jpg" class="img-fluid" alt=""></a>
+                        <span class="old_price">49.90$</span><span class="new_price"> 29.90$</span>
+                        <a href="#" class="btn btn-primary">Buy</a>
                     </div>
-                    <div class="col-6"><a href="#"><img src="images/offers/img-3.jpg" class="img-fluid" alt=""></a>
+                    <div class="col-6">
+                        <a href="#"><img src="images/offers/img-3.jpg" class="img-fluid" alt=""></a>
+                        <span class="old_price">49.90$</span><span class="new_price"> 29.90$</span>
+                        <a href="#" class="btn btn-primary">Buy</a>
                     </div>
-                    <div class="col-6"><a href="#"><img src="images/offers/img-5.jpg" class="img-fluid" alt=""></a>
+                    <div class="col-6">
+                        <a href="#"><img src="images/offers/img-5.jpg" class="img-fluid" alt=""></a>
+                        <span class="old_price">49.90$</span><span class="new_price"> 29.90$</span>
+                        <a href="#" class="btn btn-primary">Buy</a>
                     </div>
                 </div>
+
+
             </div>
         </div>
 
         <div class="row">
-            <h2>Latest articles</h2>
-            <div class="col-12">
-                <h3>An article title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            <h1>Latest articles</h1>
+            <div class="col-12 article">
+                <a class="article-link" href="#">
+                    <h3>How to find the best cycling routes in your area</h3>
+                </a>
+                <p>Published: 07.11.2021</p>
+                <img src="images/articles/bike-routes.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus necessitatibus aut optio expedita
+                    unde excepturi eius distinctio architecto veritatis aperiam ea aspernatur ullam dolorum asperiores
+                    libero sint eveniet corporis, aliquid mollitia nemo ad. Ipsa dolore sed animi nobis nesciunt beatae
+                    et. Aliquam reprehenderit harum doloribus corporis soluta quos hic, numquam, asperiores, eum
+                    molestiae aut tempore dolore! Asperiores nulla non voluptatem maiores veritatis, repudiandae esse
+                    voluptas atque laboriosam doloribus, iusto, assumenda incidunt neque quidem recusandae vitae! Soluta
+                    possimus rerum consequatur cum tempore minus nam quia asperiores necessitatibus repudiandae
+                    doloribus quis dignissimos magni, optio error beatae, aliquid mollitia incidunt. Ad earum deleniti
+                    quis ea unde non illo in? Optio nam adipisci quisquam non, rerum sapiente distinctio illum. Enim
+                    tempora reiciendis ratione quisquam voluptas nisi totam optio culpa exercitationem magni, rem nulla
+                    repellat voluptatibus pariatur qui, architecto, fugit possimus dignissimos. Natus labore fuga,
+                    quibusdam aliquid reprehenderit sunt? Quod libero fugiat recusandae natus dicta aut eius non? Minus
+                    molestias quia voluptatem nemo similique consequatur expedita, suscipit blanditiis ea illum veniam,
+                    perferendis labore dolorum exercitationem fuga ipsum debitis laudantium ut nobis. Dolorum sapiente
+                    dolor quis? Suscipit vitae labore delectus perspiciatis expedita quisquam ducimus nemo sint, ipsam
+                    aut eos, qui accusamus nobis. Illo ratione facere magnam.
+                </p>
             </div>
 
-            <div class="col-12">
-                <h3>An article title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            <div class="col-12 article">
+                <a class="article-link" href="#">
+                    <h3>Bike race comming up</h3>
+                </a>
+                <p>Published: 06.11.2021</p>
+                <img src="images/articles/bike-race.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam molestias nemo, voluptatem quae
+                    totam, quaerat ut optio iure dignissimos temporibus perferendis laborum ducimus doloribus voluptate
+                    obcaecati? Adipisci exercitationem voluptates ipsum repellendus quibusdam reprehenderit dolore
+                    illum, voluptatibus voluptatem ratione quis, quam magni ipsa quaerat! Sed, magni corrupti blanditiis
+                    reiciendis totam officia nulla voluptate eaque maiores iusto obcaecati aspernatur aut nihil eius
+                    beatae, dolorem quisquam. Autem sapiente incidunt officia? Fugiat est sequi aut dolorem voluptatem
+                    odio maxime fugit tenetur corporis cupiditate quibusdam eveniet voluptatibus repellendus, omnis
+                    explicabo rerum maiores cum eos quis molestias temporibus ipsa, distinctio molestiae. Corrupti
+                    possimus excepturi asperiores, iste maiores, quas nemo blanditiis optio iusto at, molestiae ratione
+                    saepe quia unde error dicta consectetur quae cum sit animi? Voluptate non inventore pariatur nemo
+                    vitae commodi vel consequuntur, voluptates sapiente quo? Impedit est, eveniet facilis quibusdam
+                    deleniti voluptatum recusandae magnam, aliquid dolore quis iste aut, cum magni voluptatem ex! Iste
+                    voluptatem nisi corporis quis provident. Rem pariatur officiis nisi vero cumque consequatur,
+                    laboriosam esse id eum, dolores ut est quibusdam dicta tempora provident voluptas autem deserunt
+                    voluptatum inventore. Facere quam fugiat animi nobis consectetur cupiditate, explicabo nemo libero
+                    quibusdam deleniti incidunt hic ratione quos voluptate doloribus. Provident expedita esse modi error
+                    aliquam, deleniti nulla? Voluptatem laborum doloremque excepturi ullam assumenda sunt provident
+                    ducimus cumque eos quas fuga quasi illum hic, mollitia aspernatur dolorem repudiandae animi autem
+                    architecto eveniet dolores! Magnam nulla, non quasi rem nobis itaque animi officia dolore quia eum
+                    atque consectetur harum numquam veniam mollitia. Quod, aspernatur.
             </div>
-            <div class="col-12">
-                <h3>An article title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            <div class="col-12 article">
+                <a class="article-link" href="#">
+                    <h3>What to look for when searching the best socks</h3>
+                </a>
+                <p>Published: 04.11.2021</p>
+                <img src="images/articles/choose-socks.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ducimus natus nisi aperiam?
+                    Eaque tenetur minus dolor voluptatum unde ipsam voluptates nobis accusamus perspiciatis in vitae
+                    inventore alias asperiores optio, laborum voluptatem distinctio quisquam ut fuga sapiente soluta
+                    velit? Quasi et officia perferendis nostrum maiores commodi recusandae, id vel corrupti odio
+                    distinctio sint beatae necessitatibus laborum? Est incidunt tempore architecto porro vel minus
+                    temporibus atque! Reprehenderit, necessitatibus officiis! Dolor necessitatibus, voluptate at omnis
+                    nemo, ratione reiciendis voluptatem, doloremque voluptatum officiis earum ab. Aperiam commodi neque,
+                    ipsa quisquam unde aut itaque et minima quas nostrum culpa officia quaerat dolor? Excepturi ut at
+                    illo odio, expedita consequuntur modi culpa consectetur dolores repudiandae atque velit quam
+                    assumenda, dolore qui. Consequatur praesentium iusto accusamus saepe, tempore deleniti vel nemo
+                    doloribus ratione. Quos atque assumenda excepturi quibusdam? Quibusdam, ipsum quasi, illo inventore
+                    possimus corrupti perspiciatis velit consectetur consequuntur delectus labore explicabo! Voluptatum,
+                    architecto vitae possimus in, error nulla mollitia dolor quae aspernatur tempora atque sapiente
+                    voluptate? Facilis debitis, natus odio labore quae et? Dolores voluptatibus nihil dolorum sit libero
+                    vero? Veritatis, possimus sed quibusdam earum velit fuga eius beatae voluptate! Alias ex molestiae
+                    ut at quisquam fuga nihil soluta quaerat ab ipsam! Ipsum dolor a saepe ipsa, laudantium ipsam
+                    debitis blanditiis rerum nemo mollitia. Harum non sit obcaecati hic iure eum, molestiae in officia
+                    molestias voluptatum sunt vitae. Dolores alias deleniti rerum incidunt rem harum excepturi,
+                    necessitatibus quae perferendis accusamus nesciunt ex eligendi aut, ad odio ab, quos dolorem
+                    repellat officiis. Eum delectus ab autem reprehenderit, doloremque iusto facere numquam adipisci.
+                    Veniam, ea magni maiores laborum molestiae animi, esse reprehenderit perferendis cum natus sed neque
+                    hic vero, repudiandae vitae quaerat impedit molestias officia aliquid harum nostrum minima facere?
+                    Aperiam, molestiae veritatis laudantium ullam minus sequi quia aspernatur ipsum fuga corrupti
+                    accusantium reiciendis laborum illo quaerat..</p>
             </div>
-            <div class="col-12">
-                <h3>An article title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus ea excepturi aperiam consequuntur officia quas eum? Nostrum est perferendis similique ipsum tempore officia dolorem? Voluptate perferendis ullam aut molestias.</p>
+            <div class="col-12 article">
+                <a class="article-link" href="#">
+                    <h3>Best bicycle socks for cold weather</h3>
+                </a>
+                <p>Published: 02.11.2021</p>
+                <img src="images/articles/cold-weather-socks.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sapiente autem qui itaque
+                    perspiciatis quibusdam facilis blanditiis placeat tempore esse ipsum harum iste tenetur nisi quaerat
+                    soluta eaque, vero fugiat iure facere quae error optio! Quibusdam ea alias, numquam, cupiditate
+                    ratione laboriosam, laborum quia vero voluptates ad minus saepe reprehenderit eius eos nostrum amet
+                    distinctio dignissimos impedit repellendus pariatur sint sapiente quas! Fugit suscipit quisquam
+                    nihil quasi tempora sed enim libero natus neque aspernatur tempore at iusto temporibus culpa laborum
+                    vitae veniam reiciendis quibusdam hic, rem accusantium deleniti. Deleniti vel dolorem ad quidem
+                    illum quae totam aperiam atque aliquam! Perferendis molestias molestiae expedita atque doloribus
+                    vitae necessitatibus consequuntur, quasi nesciunt commodi non animi minus, veniam a obcaecati soluta
+                    enim adipisci laudantium excepturi cum at facere ratione ut. Nesciunt laudantium esse labore
+                    repellendus. Soluta, dolore cum maxime veniam nam iure rerum id inventore harum magnam dolorem ullam
+                    officiis ipsam doloribus optio, odit ratione perferendis explicabo eius voluptate? Quae, vitae sunt!
+                    Temporibus aliquid ullam quisquam, vel necessitatibus odio officia nostrum, cupiditate nulla
+                    voluptate expedita, ex sed. Mollitia quos praesentium ea cum repellat quisquam dolorum tenetur, fuga
+                    maiores, magni consectetur ipsum ipsa possimus nemo incidunt temporibus eum! Dolorem modi
+                    consequuntur nemo consequatur! Dolor!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="shipping-details">
+                        <h6>Shipping details</h6>
+                        <p> Click <a href="#">here</a> for details about shipment in your area.</p>
+                    </div>
+                </div>
+                <div class="col-3 mid-column">
+                    <p>FOLLOW US @</p>
+                    <ul class="social-btn">
+                        <li>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-pinterest"></i></a>
+                        </li>
+                    </ul>
+                    <a href="#">
+                        <p class="join-mailing">JOIN OUR MAILING LIST</p>
+                    </a>
+                </div>
+                <div class="col-3 right-column">
+                    <ul>
+                        <a href="#">
+                            <li>MEN'S</li>
+                        </a>
+                        <a href="#">
+                            <li>WOMEN'S</li>
+                        </a>
+                        <a href="#">
+                            <li>ACCESSORIES</li>
+                        </a>
+                        <a href="#">
+                            <li>CUSTOM</li>
+                        </a>
+                        <a href="#">
+                            <li>CONTACT US</li>
+                        </a>
+                        <a href="#">
+                            <li>PRIVACY POLICY</li>
+                        </a>
+                    </ul>
+                </div>
+
             </div>
 
         </div>
-
-
-    </div>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
